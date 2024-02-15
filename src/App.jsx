@@ -11,11 +11,17 @@ function App() {
 
   return (
     <>
-      <button onClick={() => dispatch(incrementByAmount(5))}>increment 5</button>
+      <button onClick={() => dispatch(incrementByAmount(5))}>
+        increment 5
+      </button>
       <br />
       <button onClick={() => dispatch(increment())}>increment</button>
       <h1>{count}</h1>
       <button onClick={() => dispatch(decrement())}>decrement</button>
+      <br />
+      <button onClick={() => dispatch(incrementByAmount(-5))}>
+        increment 5
+      </button>
     </>
   );
 }
